@@ -7,14 +7,14 @@ use Illuminate\Http\Request;
 class TokoController extends Controller
 {
     public function index(){
-        return view('toko/index');
+        return view('praktikum10/index');
     }
 
     public function detail(){
-        return view('toko/detail');
+        return view('praktikum10/detail');
     }
 
     public function about(){
-        return view('toko/about');
+        return view('praktikum10/about');
     }
 }
