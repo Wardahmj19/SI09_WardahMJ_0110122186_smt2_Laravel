@@ -65,3 +65,18 @@ Route::get('/praktikum9/tugas',
 
 Route::post('/praktikum9/hasil', 
     [UserController::class, 'hasil'])->name('praktikum9/hasil');
+
+// prakrikum 10
+
+use App\Http\Controllers\TokoController;
+
+Route::prefix('/toko')->group(function(){
+    Route::get('/', [
+        TokoController::class, 'index']);
+    
+    Route::get('/detail', [
+        TokoController::class, 'detail']);
+    
+    Route::get('/about', [
+        TokoController::class, 'about']);
+});

@@ -4,7 +4,7 @@
 <hr>
 <br>
 <table border="1" width="100%" class="table" style="text-align:center;">
-  <thead style="background-color:#1E90FF;">
+  <thead style="background-color:#E5E7E9;">
     <tr>
       <th>Nama</th>
       <th>Tanggal Pemeriksaan</th>
