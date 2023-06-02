@@ -70,7 +70,7 @@ Route::post('/praktikum9/hasil',
 
 use App\Http\Controllers\TokoController;
 
-Route::prefix('/praktikum10')->group(function(){
+Route::prefix('/praktikum10-11')->group(function(){
     Route::get('/', [
         TokoController::class, 'index']);
     
@@ -79,4 +79,10 @@ Route::prefix('/praktikum10')->group(function(){
     
     Route::get('/about', [
         TokoController::class, 'about']);
+
+    Route::get('/admin', [
+        TokoController::class, 'admin']);
+
+    Route::get('/customers', [
+        TokoController::class, 'customers']);
 });
