@@ -23,7 +23,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="/praktikum10-11" class="nav-link">Home</a>
+        <a href="/praktikum" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
@@ -200,19 +200,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/praktikum10-11/admin" class="nav-link">
+                <a href="/praktikum/admin" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Produk</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/praktikum10-11/customers" class="nav-link">
+                <a href="/praktikum/customers" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Pelanggan</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/praktikum10-11" class="nav-link">
+                <a href="/praktikum" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v3</p>
                 </a>
@@ -237,7 +237,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="/praktikum10-11">Home</a></li>
+              <li class="breadcrumb-item"><a href="/praktikum">Home</a></li>
               <li class="breadcrumb-item active">Blank Page</li>
             </ol>
           </div>

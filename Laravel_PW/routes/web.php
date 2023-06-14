@@ -66,11 +66,11 @@ Route::get('/praktikum9/tugas',
 Route::post('/praktikum9/hasil', 
     [UserController::class, 'hasil'])->name('praktikum9/hasil');
 
-// prakrikum 10
+// prakrikum 10-11-12-13
 
 use App\Http\Controllers\TokoController;
 
-Route::prefix('/praktikum10-11')->group(function(){
+Route::prefix('/praktikum')->group(function(){
     Route::get('/', [
         TokoController::class, 'index']);
     
@@ -80,9 +80,51 @@ Route::prefix('/praktikum10-11')->group(function(){
     Route::get('/about', [
         TokoController::class, 'about']);
 
-    Route::get('/admin', [
-        TokoController::class, 'admin']);
 
+    Route::group(['middleware' => ['auth']], function(){
+
+        Route::get('/admin', [
+            TokoController::class, 'admin'])->name('produk.admin');
+
+        route::get('/create', [
+            TokoController::class, 'create'])->name('produk.create');
+        
+        route::post('/store',[
+            TokoController::class, 'store'])->name('produk.store');
+        
+        route::get('/{product}/edit', [
+            TokoController::class, 'edit'])->name('produk.edit');
+        
+        route::delete('/{product}', [
+            TokoController::class, 'destroy'])->name('produk.destroy');
+        
+        route::put('/{product}', [
+            TokoController::class, 'update'])->name('produk.update');
+    });    
+
+    
     Route::get('/customers', [
-        TokoController::class, 'customers']);
+        TokoController::class, 'customers'])->name('pelanggan.customers');
+    
+    route::get('/tambah', [
+        TokoController::class, 'tambah'])->name('pelanggan.tambah');
+    
+    route::post('/toko',[
+        TokoController::class, 'toko'])->name('pelanggan.toko');
+    
+    route::get('/{customer}/ubah', [
+        TokoController::class, 'ubah'])->name('pelanggan.ubah');
+    
+    route::delete('/{customer}', [
+        TokoController::class, 'hapus'])->name('pelanggan.hapus');
+    
+    route::put('/{customer}', [
+        TokoController::class, 'baru'])->name('pelanggan.baru');
 });
+
+
+    
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

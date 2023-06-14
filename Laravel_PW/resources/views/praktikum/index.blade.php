@@ -28,7 +28,7 @@
 <div class="row row-cols-2 row-cols-md-4 g-4 mb-5">
   <div class="col">
     <div class="card h-100">
-    <a href="/praktikum10-11/detail" class="btn">
+    <a href="/praktikum/detail" class="btn">
       <img src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png" class="card-img-top" alt="">
       <div class="card-body">
         <h5 class="card-title">PRODUK</h5>
@@ -39,7 +39,7 @@
   </div>
   <div class="col">
     <div class="card h-100">
-    <a href="/praktikum10-11/detail" class="btn">
+    <a href="/praktikum/detail" class="btn">
       <img src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png" class="card-img-top" alt="">
       <div class="card-body">
         <h5 class="card-title">PRODUK</h5>
@@ -50,7 +50,7 @@
   </div>
   <div class="col">
     <div class="card h-100">
-    <a href="/praktikum10-11/detail" class="btn">
+    <a href="/praktikum/detail" class="btn">
       <img src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png" class="card-img-top" alt="">
       <div class="card-body">
         <h5 class="card-title">PRODUK</h5>
@@ -61,7 +61,7 @@
   </div>
   <div class="col">
     <div class="card h-100">
-    <a href="/praktikum10-11/detail" class="btn">
+    <a href="/praktikum/detail" class="btn">
       <img src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">PRODUK</h5>
