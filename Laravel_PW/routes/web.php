@@ -100,26 +100,26 @@ Route::prefix('/praktikum')->group(function(){
         
         route::put('/{product}', [
             TokoController::class, 'update'])->name('produk.update');
-    });    
 
-    
-    Route::get('/customers', [
-        TokoController::class, 'customers'])->name('pelanggan.customers');
-    
-    route::get('/tambah', [
-        TokoController::class, 'tambah'])->name('pelanggan.tambah');
-    
-    route::post('/toko',[
-        TokoController::class, 'toko'])->name('pelanggan.toko');
-    
-    route::get('/{customer}/ubah', [
-        TokoController::class, 'ubah'])->name('pelanggan.ubah');
-    
-    route::delete('/{customer}', [
-        TokoController::class, 'hapus'])->name('pelanggan.hapus');
-    
-    route::put('/{customer}', [
-        TokoController::class, 'baru'])->name('pelanggan.baru');
+        Route::get('/customers', [
+            TokoController::class, 'customers'])->name('pelanggan.customers');
+            
+        route::get('/tambah', [
+            TokoController::class, 'tambah'])->name('pelanggan.tambah');
+            
+        route::post('/toko',[
+            TokoController::class, 'toko'])->name('pelanggan.toko');
+            
+        route::get('/{customer}/ubah', [
+            TokoController::class, 'ubah'])->name('pelanggan.ubah');
+            
+        route::delete('/{customer}', [
+            TokoController::class, 'hapus'])->name('pelanggan.hapus');
+            
+        route::put('/{customer}', [
+            TokoController::class, 'baru'])->name('pelanggan.baru');            
+    });   
+
 });
 
 
