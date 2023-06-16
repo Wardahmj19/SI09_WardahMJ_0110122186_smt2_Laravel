@@ -95,10 +95,10 @@ Route::prefix('/praktikum')->group(function(){
         route::get('/{product}/edit', [
             TokoController::class, 'edit'])->name('produk.edit');
         
-        route::delete('/{product}', [
+        route::delete('/product/{product}', [
             TokoController::class, 'destroy'])->name('produk.destroy');
         
-        route::put('/{product}', [
+        route::put('/product/{product}', [
             TokoController::class, 'update'])->name('produk.update');
 
         Route::get('/customers', [
