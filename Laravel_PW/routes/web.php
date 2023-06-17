@@ -95,10 +95,10 @@ Route::prefix('/praktikum')->group(function(){
         route::get('/{product}/edit', [
             TokoController::class, 'edit'])->name('produk.edit');
         
-        route::delete('/product/{product}', [
+        route::delete('/{product}', [
             TokoController::class, 'destroy'])->name('produk.destroy');
         
-        route::put('/product/{product}', [
+        route::put('/{product}', [
             TokoController::class, 'update'])->name('produk.update');
 
         Route::get('/customers', [
@@ -113,10 +113,10 @@ Route::prefix('/praktikum')->group(function(){
         route::get('/{customer}/ubah', [
             TokoController::class, 'ubah'])->name('pelanggan.ubah');
             
-        route::delete('/{customer}', [
+        route::delete('/customer/{customer}', [
             TokoController::class, 'hapus'])->name('pelanggan.hapus');
             
-        route::put('/{customer}', [
+        route::put('/customer/{customer}', [
             TokoController::class, 'baru'])->name('pelanggan.baru');            
     });   
 
